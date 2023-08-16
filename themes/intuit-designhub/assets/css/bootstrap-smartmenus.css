@@ -1,0 +1,49 @@
+/*
+Name: bootstrap-smartmenus.css
+*/
+
+/* Carets in collapsible mode (make them look like +/- buttons) */
+
+/*--------------------------------------------------
+=>>  Navbar 
+--------------------------------------------------*/
+
+.navbar {
+    background-color: #18191b;
+}
+.navbar .nav .menu-item .nav-link {
+    color: #ddd;
+}
+.dropdown-menu {
+    color: #ddd;
+    background-color: transparent;
+}
+.dropdown-item {
+    color: #ddd;
+}
+.navbar .nav .dropdown-menu > .menu-item > ul.dropdown-menu > .menu-item > .dropdown-item {
+	color: #ddd !important;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 1);
+}
+.navbar .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .nav .menu-item .nav-link.add-menu {
+    background-color: transparent;
+}
+@media (min-width: 992px) {
+	.navbar .nav .dropdown-menu {
+		background-color: #18191b;
+	}
+	.navbar .nav .dropdown-item {
+		color: #ddd;
+	}		
+}
+@media (max-width: 991px){
+	.navbar .nav .menu-item .nav-link {
+		border-bottom: 1px solid #626364;
+	}
+}

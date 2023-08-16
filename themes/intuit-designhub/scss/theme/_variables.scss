@@ -1,0 +1,75 @@
+// Theme Colors
+$pink-100:              #9C005E;
+$pink-200:              #C9007A;
+$pint-300:              #E31C9E;
+$red-100:               #B80000;
+$red-200:               #B80000;
+$red-300:               #B80000;
+$red-400:               #F25A52;
+$white:                 #ffffff;
+$black:                 #000000;
+
+// Bootstrap variables
+
+// Color
+$primary:               $pink-200;
+$body-color:            $black;
+$link-hover-color:      $pink-100;
+
+// Typography
+$font-family-base:      'AvenirNext forINTUIT', sans-serif;
+
+$font-size-base:        1.25rem;
+$font-weight-base:      400;
+$line-height-base:      1.4;
+
+$h1-font-size:          3rem;
+$h2-font-size:          2.5rem;
+$h3-font-size:          2.125rem;
+$h4-font-size:          1.75rem;
+$h5-font-size:          1.5rem;
+$h6-font-size:          1.25rem;
+
+$display-font-sizes: (
+  1: 5.25rem,
+  2: 4.5rem,
+  3: 3.75rem,
+  4: 3rem
+);
+
+$display-font-weight:   700;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 448px,
+  md: 720px,
+  lg: 992px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Navbar
+$navbar-padding-y:                  2rem;
+$navbar-padding-x:                  3.375rem;
+
+$navbar-nav-link-padding-x:         1rem;
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $black;
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M20 3H0V0H20V3Z' fill='white'/><path fill-rule='evenodd' clip-rule='evenodd' d='M20 11H0V8H20V11Z' fill='white'/><path fill-rule='evenodd' clip-rule='evenodd' d='M20 19H0V16H20V19Z' fill='white'/></svg>");
+$navbar-dark-toggler-border-color:  null;
+
+// Navs
+$nav-link-font-size:                1rem;
+$nav-link-font-weight:              600;
+$nav-link-padding-y:                .5rem;
+$nav-link-padding-x:                1rem;

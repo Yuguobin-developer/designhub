@@ -1,0 +1,286 @@
+@keyframes footer-slider-area {
+	0% {
+		@include mx_transform(translate(0, 0));
+	}
+
+	100% {
+		@include mx_transform(translate(-100%, 0));
+	}
+}
+
+footer#colophon {
+	position: relative;
+
+	body.footer-reveal & {
+		position: fixed;
+		z-index: -10;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}	
+}
+
+.wpcf7-response-output {
+	margin: 2rem 0 !important;
+    padding: 0 !important;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 700;
+    border: none !important;
+}
+
+.site-footer {
+	background-color: $black;
+
+	.footer-banner {
+		background-color: $black;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		
+		.container {
+			max-width: none;
+			overflow-x: hidden;
+			padding: 0;
+	
+			.footer-slider-area {
+				inline-size: max-content;
+				white-space: nowrap;
+				overflow: hidden;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				margin: 0;
+	
+				.footer-slider {
+					border-bottom: 1px solid $white;
+					display: inline-block;
+					
+					> div {
+						display: inline-block;
+						white-space: nowrap;
+						text-align: center;
+						animation: footer-slider-area 8s linear infinite;
+					}
+	
+					br {
+						display: none;
+					}
+					
+					p {
+						font-weight: 600;
+						margin: auto 0.625rem auto 1.25rem;
+						display: inline-block;
+						vertical-align: middle;
+					}
+	
+					a {
+						margin-top: auto;
+						margin-bottom: auto;
+						display: inline-block;
+						vertical-align: middle;
+						text-align: center;
+						min-width: 100px;
+					}
+	
+					img {
+						margin-left: 0.9375rem;
+						margin-right: 0.9375rem;
+						height: 23px;
+					    margin-top: 5px;
+					    margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-main {
+		border-top: 1px solid $white;
+		color: $white;
+		padding-top: 6.8375rem;
+		padding-bottom: 7.9125rem;
+
+		.footer-reveal & {
+			display: flex;
+			align-items: center;
+			height: 100%;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding-top: 7.75rem;
+			padding-bottom: 5rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding-top: 8.125rem;
+			padding-bottom: 8rem;
+		}
+
+		h2 {
+			margin: 0;
+			font-size: 4.5rem;
+			font-weight: 700;
+			line-height: 5.75rem;
+
+			@include media-breakpoint-down(sm) {
+				font-size: 2.5rem;
+				font-weight: 600;
+				line-height: 3.25rem;
+			}		
+		}
+
+		.footer-left {
+			.footer-desc {
+				margin-top: 2.5rem;
+				font-weight: 500;
+	
+				@include media-breakpoint-down(sm) {
+					margin-top: 1.25rem;
+				}
+	
+				p {
+					font-size: 1rem;
+					line-height: 1.5rem;
+					margin-bottom: 1.25rem;
+	
+					@include media-breakpoint-down(sm) {
+						margin-bottom: 2.75rem;
+					}
+				}
+			}
+	
+			form {
+				margin-bottom: 0;
+
+				.row > * {
+					padding-left: 0.625rem;
+					padding-right: 0.625rem;
+				}
+				
+				span.hint {
+					font-size: 0.75rem;
+					font-weight: 400;
+					line-height: 1rem;
+					color: $white;
+					max-width: 20.375rem;
+					margin-left: 1.25rem;
+
+					@include media-breakpoint-down(md) {
+						max-width: initial;						
+						width: 100%;
+					}
+
+					@include media-breakpoint-down(sm) {
+						margin-left: 0;
+					}
+	
+					a {
+						color: $white;
+						font-weight: 600;
+
+						&:hover {
+							color: $pink-200;
+						}
+					}
+				}
+			}
+		}
+
+		.footer-right {
+			@include media-breakpoint-up(lg) {
+				padding-left: 5.375rem;	
+				margin-top: 0.5rem;			
+			}			
+
+			@include media-breakpoint-down(lg) {
+				margin-top: 3.875rem;
+			}
+
+			@include media-breakpoint-down(sm) {
+				margin-top: 6rem;
+			}
+
+			.widget {
+				color: $white;
+
+				.widget-title {
+					font-size: 2.125rem;
+					font-weight: 600;
+					line-height: 2.75rem;
+					margin-bottom: 1.5rem;
+					
+					@include media-breakpoint-down(sm) {						
+						font-size: 1.75rem;
+						font-weight: 700;
+						line-height: 2.25rem;
+					}
+				}
+
+				.footer-menu {
+					margin: 0 0 1.875rem 0;
+					padding: 0;
+					list-style: none;
+
+					li {
+						font-size: 1rem;
+						font-weight: 600;
+						line-height: 1.5rem;
+						padding: 0.75rem 0;
+
+						a {
+							color: $white;
+							font-size: 1rem;
+							font-weight: 600;
+							line-height: 1.5rem;
+
+							&:hover {
+								color: $pink-200;
+							}
+						}
+					}
+				}
+			}
+
+			.footer-logo-area {
+				margin-top: 1rem;				
+			    @media(max-width: 768px){
+			    	margin-top: -4rem;
+			    }   
+			}
+
+			.footer-logo {
+				color: $white;
+				display: flex;
+				font-size: 1.25rem;
+				line-height: 1.75rem;
+				font-weight: 700;
+
+				img {
+					margin-right: 0.625rem;				
+				}
+			}
+
+			.footer-social {
+				a {
+					margin-right: 1.875rem;
+					margin-top: 0.9375rem;
+				}
+			}
+
+			.copyright {
+				color: $white; 
+				font-size: 0.875rem;
+				font-weight: 500;
+				line-height: 1.25rem;
+				margin-top: 0.8125rem;
+			}
+		}
+	}
+}
+
+
+
+

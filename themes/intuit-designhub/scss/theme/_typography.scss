@@ -1,0 +1,196 @@
+body {
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+h1 {
+    font-weight: 600;
+    line-height: 3.75rem;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 3.25rem;
+    @media(max-width: 768px) {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        font-weight: 500;
+    }
+}
+
+h3 {
+    font-weight: 600;
+    line-height: 2.75rem;
+}
+
+h4 {
+    font-weight: 500;
+    line-height: 2.25rem;
+}
+
+h5 {
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h6 {
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.display-1 {
+    line-height: 6.75rem;
+}
+
+.display-2 {
+    line-height: 5.75rem;
+     @include media-breakpoint-down(md) {
+            line-height: 3.75rem;
+        }
+}
+
+.display-3 {
+    line-height: 4.75rem;
+}
+
+.display-4 {
+    line-height: 3.75rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    a {
+        color: #CB0088;
+        font-weight: 400;	
+	background: linear-gradient(0deg, #9C005E, #9C005E) no-repeat right bottom / 0 var(--bg-h);  
+	transition: background-size 350ms;  
+	--bg-h: 0.1rem;    
+	text-decoration: none;
+
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #9C005E;
+	    background-size: 100% var(--bg-h);
+	    background-position-x: left;    
+	    text-decoration: none !important;
+        }
+    }
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+
+    @include mx_transition(all 0.8s ease-in-out);
+
+    &:hover,
+    &:focus, 
+    &:active {
+        color: $pink-100;
+    }
+
+    &.underline {
+        border-bottom: 3px solid $pink-200;
+        display: inline-block;        
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: 1px;
+	    line-height: 1em;
+        }
+
+        &:hover,
+        &:focus, 
+        &:active {
+            border-color: $pink-100;
+        }
+    }
+
+    &.inverse-color {
+        color: $pink-100;        
+
+        &:hover,
+        &:focus, 
+        &:active {
+            color: $pink-200;
+        }
+
+        &.underline {
+            border-bottom: 3px solid $pink-100;
+
+            &:hover,
+            &:focus, 
+            &:active {
+                border-color: $pink-200;
+            }
+        }
+    }
+}
+
+.acf-designhub-link {
+    a {
+        font-size: 1.25rem;    
+        border-bottom: 3px solid #c9007a;
+    }
+}
+ul, li {
+    list-style: none;
+}
+
+blockquote {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    text-align: center;
+
+    &:before {
+        content: '';
+        display: block;
+        background: url(../images/icon-quote.png) center center no-repeat;
+        height: 2.75rem;
+        background-size: auto 100%;
+        margin-bottom: 1.25rem;
+
+        @include media-breakpoint-down(md) {
+            height: 1.375rem;
+            margin-bottom: 0.625rem;
+        }
+    }
+
+    p {
+        font-size: 2.5rem;
+        font-weight: $font-weight-bold;
+        line-height: 1.3;
+        text-align: center;
+        margin-bottom: 1.25rem;
+
+        @include media-breakpoint-down(md) {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.625rem;
+        }
+    }
+
+    cite {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+@media(min-width: 768px) {    
+    #main-menu {
+        a {
+            font-size: 1.25rem;
+        }
+    }
+}
+

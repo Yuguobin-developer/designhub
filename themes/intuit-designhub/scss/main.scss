@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Rg_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Rg_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Rg_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Demi_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Demi_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Demi_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Bold_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Bold_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Bold_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Heavy_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.ttf") format("truetype"); 
+}
+
+// Variaables & Mixins
+@import "theme/variables";
+@import "theme/mixins";
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Theme
+@import "theme/typography";
+@import "theme/header";
+@import "theme/nav";
+@import "theme/footer";
+@import "theme/blocks";
+@import "theme/page";
+@import "theme/post";
+@import "theme/form";
+@import "theme/blog";
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1640px;
+    }
+}

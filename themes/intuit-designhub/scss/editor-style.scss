@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Rg_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Rg_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Rg_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Demi_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Demi_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Demi_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Bold_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Bold_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Bold_web.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "AvenirNext forINTUIT";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/AvenirNext_forINTUIT_W05_Heavy_web.woff2") format("woff2"), 
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.woff") format("woff"),
+         url("../fonts/AvenirNext_forINTUIT_W05_Mediu_web.ttf") format("truetype"); 
+}
+
+// Variaables & Mixins
+@import "theme/variables";
+@import "theme/mixins";
+
+// Bootstrap
+// Grab a few bootstrap assets so we can use mixins, variables, etc
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// Layout & components
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/bootstrap-utilities";
+
+// Theme
+@import "theme/typography";
+@import "theme/blocks";
+@import "theme/post";
+
+.wp-block {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.acf-block-landing-banner {
+    .landing-banner-article {
+        display: none;
+    }
+    
+    #pinContainer {
+        height: auto;
+    }
+    
+    .panel {
+        height: auto;
+        position: relative;
+    }
+}
